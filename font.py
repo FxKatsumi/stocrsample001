@@ -3,7 +3,6 @@ import sys
 import os
 
 from PIL import ImageDraw, Image, ImageFont
-import streamlit as st
 
 def font_installed_dirs() -> list[str]:
     """
@@ -55,15 +54,12 @@ def show_fonts():
     # shutil.rmtree(output_dir)
     # os.mkdir(output_dir)
 
-    flist = ""
-
     for f in font_path_list():
         font_name = os.path.basename(f)
         # image = Image.new('RGBA', (600, 200), 'white')
         # draw = ImageDraw.Draw(image)
 
-        # print(font_name)
-        flist += font_name + "\n"
+        print(font_name)
 
         # try:
         #     font = ImageFont.truetype(f, font_size)
@@ -83,8 +79,6 @@ def show_fonts():
         # with open(os.path.join(output_dir, font_name + ".txt"), "w") as fp:
         #     fp.write(f"{f}\n")
         #     fp.write(f"{font_name}\n")
-
-    st.text(flist)
 
 if __name__ == '__main__':
     show_fonts()
