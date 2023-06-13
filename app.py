@@ -15,8 +15,13 @@ font_name_mac = "ヒラギノ丸ゴ ProN W4.ttc"
 # font_name_lnx = "DejaVuSerif-Bold.ttf"
 # font_name_lnx = "DejaVuSansMono.ttf"
 # font_name_lnx = "DejaVuSansMono-Bold.ttf"
-font_name_lnx = "DejaVuSans.ttf"
+# font_name_lnx = "DejaVuSans.ttf"
 # font_name_lnx = "DejaVuSans-Bold.ttf"
+font_name_lnx = "Noto Sans CJK JP"
+# font_name_lnx = ""
+# font_name_lnx = ""
+# font_name_lnx = ""
+# font_name_lnx = ""
 
 # フォント
 if sys.platform == "win32": # Windows
