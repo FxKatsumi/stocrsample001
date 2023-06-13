@@ -91,7 +91,8 @@ if uploaded_file is not None:
                     # 矩形を描画
                     draw.rectangle([wp[0], wp[1], wp[4], wp[5]], fill=None, outline=(0, 255, 0), width=1)
                     # テキストを描画
-                    draw.text((wp[6] + 5, wp[7] - 5), wtext, font=fnt, fill=(0, 0, 255))
+                    # draw.text((wp[6] + 5, wp[7] - 5), wtext, font=fnt, fill=(0, 0, 255))
+                    draw.text((wp[6] + 5, wp[7] - 5), sys.platform, font=fnt, fill=(0, 0, 255))
                 except:
                     pass
 
