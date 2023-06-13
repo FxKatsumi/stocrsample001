@@ -3,23 +3,6 @@ from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont
 import time
 import streamlit as st
-import sys
-
-# フォント
-# Windows
-font_name_win = "./meiryo.ttc" # メイリョウ
-# Mac
-font_name_mac = "ヒラギノ丸ゴ ProN W4.ttc"
-# Linux
-font_name_lnx = "DejaVuSerif.ttf"
-
-# フォント
-if sys.platform == "win32": # Windows
-    font_name = font_name_win
-if sys.platform == "darwin": # Mac
-    font_name = font_name_mac
-if sys.platform in ("linux", "linux2"): # Linux
-    font_name = font_name_lnx
 
 # ファイルをアップロードするためのStreamlitのウィジェットを表示
 uploaded_file = st.file_uploader("名刺の画像ファイルをアップロードしてください", type=["jpg", "jpeg", "png"])
@@ -68,7 +51,7 @@ if uploaded_file is not None:
 
     # 画像イメージ読み込み
     draw = ImageDraw.Draw(im)
-    fnt = ImageFont.truetype(font_name, 15)
+    fnt = ImageFont.truetype('./meiryo.ttc', 15)
 
     if "analyzeResult" in analysis:  # 成功した場合
         # 行ごとにデータを格納する
