@@ -21,6 +21,13 @@ if sys.platform == "darwin": # Mac
 if sys.platform in ("linux", "linux2"): # Linux
     font_name = font_name_lnx
 
+# ロゴマーク表示
+img = Image.open('images/forex_logo_a.png')
+st.image(img, width=80, use_column_width=False)
+
+# メイン画面
+st.title('テキストくん')
+
 # ファイルをアップロードするためのStreamlitのウィジェットを表示
 uploaded_file = st.file_uploader("名刺の画像ファイルをアップロードしてください", type=["jpg", "jpeg", "png"])
 
@@ -103,4 +110,4 @@ if uploaded_file is not None:
     st.image(im, caption='OCR 結果の画像', use_column_width=True)
 
     # テキストを表示
-    st.text_area("OCR 結果のテキスト", value=txt_lines, height=200)
+    st.text_area("OCR 結果のテキスト", value=txt_lines, height=300)
