@@ -18,8 +18,8 @@ font_name_mac = "ヒラギノ丸ゴ ProN W4.ttc"
 # font_name_lnx = "DejaVuSans.ttf"
 # font_name_lnx = "DejaVuSans-Bold.ttf"
 # font_name_lnx = "NotoSansCJKjp-Regular.otf" # Noto Sans CJK JP
-font_name_lnx = "./ipam.ttf" # IPAMincho
-# font_name_lnx = "ipag.ttf" # IPAPGothic
+# font_name_lnx = "ipam.ttf" # IPAMincho
+font_name_lnx = "ipag.ttf" # IPAPGothic
 # font_name_lnx = "KozGoPro-Regular.otf" # Kozuka Gothic Pro
 # font_name_lnx = "KozMinPro-Regular.otf" # Kozuka Mincho Pro
 
