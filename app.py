@@ -12,8 +12,8 @@ font_name_win = "./meiryo.ttc" # メイリョウ
 font_name_mac = "ヒラギノ丸ゴ ProN W4.ttc"
 # Linux
 # font_name_lnx = "DejaVuSerif.ttf"
-font_name_lnx = "DejaVuSerif-Bold.ttf"
-# font_name_lnx = "DejaVuSansMono.ttf"
+# font_name_lnx = "DejaVuSerif-Bold.ttf"
+font_name_lnx = "DejaVuSansMono.ttf"
 # font_name_lnx = "DejaVuSansMono-Bold.ttf"
 # font_name_lnx = "DejaVuSans.ttf"
 # font_name_lnx = "DejaVuSans-Bold.ttf"
