@@ -75,9 +75,7 @@ if uploaded_file is not None:
 
     # 画像イメージ読み込み
     draw = ImageDraw.Draw(im)
-
-    if sys.platform == "win32": # Windows
-        fnt = ImageFont.truetype(font_name, 15)
+    fnt = ImageFont.truetype(font_name, 15)
 
     txt_lines = ""
 
@@ -104,10 +102,7 @@ if uploaded_file is not None:
                     # 矩形を描画
                     draw.rectangle([wp[0], wp[1], wp[4], wp[5]], fill=None, outline=(0, 255, 0), width=1)
                     # テキストを描画
-                    if sys.platform == "win32": # Windows
-                        draw.text((wp[6] + 5, wp[7] - 5), wtext, font=fnt, fill=(0, 0, 255))
-                    else:
-                        draw.text((wp[6] + 5, wp[7] - 5), wtext, fill=(0, 0, 255))
+                    draw.text((wp[6] + 5, wp[7] - 5), wtext, font=fnt, fill=(0, 0, 255))
                 except:
                     pass
 
